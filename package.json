@@ -1,0 +1,32 @@
+{
+  "name": "3h-sever",
+  "version": "1.0.0",
+  "description": "A cli sever lib.",
+  "main": "3h-sever.js",
+  "scripts": {
+    "test": "node 3h-sever.js -h"
+  },
+  "bin": "3h-sever.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huang2002/3h-sever.git"
+  },
+  "keywords": [
+    "sever",
+    "cli",
+    "3h",
+    "router",
+    "route"
+  ],
+  "author": "3h",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huang2002/3h-sever/issues"
+  },
+  "homepage": "https://github.com/huang2002/3h-sever#readme",
+  "dependencies": {
+    "3h-cli": "^1.0.4",
+    "3h-log": "^2.0.2",
+    "3h-router": "^1.8.0"
+  }
+}
