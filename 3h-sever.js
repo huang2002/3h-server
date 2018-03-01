@@ -53,7 +53,7 @@ cli.set({
         process.exit(0);
     }
 
-    const router = new Router(__dirname);
+    const router = new Router(process.cwd());
 
     if (args.has('dp')) {
         args.get('dp').forEach(page => {
@@ -88,4 +88,3 @@ cli.set({
     router.start(args.has('pt') && args.get('pt')[0] || 80);
 
 }).exec(process.argv);
-
