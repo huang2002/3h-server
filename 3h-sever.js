@@ -62,12 +62,12 @@ cli.set({
     }
     if (args.has('pf')) {
         args.get('pf').forEach(file => {
-            Router.privateFiles.push(file);
+            Router.privateFiles.push(new RegExp(file));
         });
     }
     if (args.has('pd')) {
         args.get('pd').forEach(dir => {
-            Router.privateDirectories.push(dir);
+            Router.privateDirectories.push(new RegExp(dir));
         });
     }
     if (args.has('sr')) {
@@ -85,6 +85,9 @@ cli.set({
         });
     }
 
-    router.start(args.has('pt') && args.get('pt')[0] || 80);
+    const port = args.has('pt') && args.get('pt')[0] || 80;
+    router.start(port);
+    console.log(`Sever started on port ${port}.`);
+    console.log(`( At path '${router.root}' )`);
 
 }).exec(process.argv);

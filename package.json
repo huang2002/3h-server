@@ -1,6 +1,6 @@
 {
   "name": "3h-sever",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "A cli sever lib.",
   "main": "3h-sever.js",
   "scripts": {
@@ -27,6 +27,6 @@
   "dependencies": {
     "3h-cli": "^1.0.4",
     "3h-log": "^2.0.2",
-    "3h-router": "^1.8.0"
+    "3h-router": "^1.8.1"
   }
 }
