@@ -1,6 +1,6 @@
 {
   "name": "3h-sever",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A cli sever lib.",
   "main": "3h-sever.js",
   "scripts": {
