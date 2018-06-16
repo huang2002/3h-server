@@ -1,17 +1,17 @@
-# 3h-sever
-> A cli sever lib.
+# 3h-server
+> A cli server lib.
 
 ## Install
 ```
-$ npm install 3h-sever -g
+$ npm install 3h-server -g
 ```
 
 ## Help
 ```
-$ 3h-sever -h
-Start a sever in current directory.
+$ 3h-server -h
+Start a server in current directory.
 
-3h-sever <port> [options]
+3h-server <port> [options]
 
     <port>           The port to listen on.
     -h               Show help info.

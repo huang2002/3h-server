@@ -7,8 +7,8 @@ const cli = new CLI(),
     logger = new Logger();
 
 cli.set({
-    name: '3h-sever',
-    title: 'Start a sever in current directory.',
+    name: '3h-server',
+    title: 'Start a server in current directory.',
     nameSize: 7,
     gapSize: 10
 }).first({
@@ -87,7 +87,7 @@ cli.set({
 
     const port = args.has('pt') && args.get('pt')[0] || 80;
     router.start(port);
-    console.log(`Sever started on port ${port}.`);
+    console.log(`Server started on port ${port}.`);
     console.log(`( At path '${router.root}' )`);
 
 }).exec(process.argv);
