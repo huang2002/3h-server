@@ -1,11 +1,12 @@
 {
     "name": "3h-server",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "A cli server lib.",
     "main": "3h-server.js",
     "scripts": {
         "test": "node 3h-server.js -h"
     },
+    "preferGlobal": true,
     "bin": "3h-server.js",
     "repository": {
         "type": "git",
