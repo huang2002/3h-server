@@ -1,6 +1,6 @@
 {
     "name": "3h-server",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A cli server lib.",
     "main": "dist/index.js",
     "scripts": {
