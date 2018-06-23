@@ -1,3 +1,4 @@
+#!node
 import Logger = require('3h-log');
 import Router = require('3h-router');
 import cli = require('./cli');
