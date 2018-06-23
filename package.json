@@ -1,13 +1,15 @@
 {
     "name": "3h-server",
-    "version": "0.1.1",
+    "version": "1.0.0",
     "description": "A cli server lib.",
-    "main": "3h-server.js",
+    "main": "dist/index.js",
     "scripts": {
-        "test": "node 3h-server.js -h"
+        "test": "cd test && node ../dist/index -p 88 -l -e -r --sub-routers sub.js --default-pages main.html",
+        "test:help": "node dist/index -h",
+        "build": "tsc"
     },
     "preferGlobal": true,
-    "bin": "3h-server.js",
+    "bin": "dist/index.js",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/huang2002/3h-server.git"
@@ -15,9 +17,10 @@
     "keywords": [
         "server",
         "cli",
-        "3h",
         "router",
-        "route"
+        "route",
+        "http",
+        "3h"
     ],
     "author": "3h",
     "license": "MIT",
@@ -26,8 +29,11 @@
     },
     "homepage": "https://github.com/huang2002/3h-server#readme",
     "dependencies": {
-        "3h-cli": "^1.4.1",
-        "3h-log": "^2.0.3",
-        "3h-router": "^1.8.1"
+        "3h-cli": "^1.4.3",
+        "3h-log": "^3.0.1",
+        "3h-router": "^2.0.2"
+    },
+    "devDependencies": {
+        "@types/node": "^10.3.5"
     }
 }
