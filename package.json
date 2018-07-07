@@ -1,6 +1,6 @@
 {
     "name": "3h-server",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "A cli server lib.",
     "main": "dist/index.js",
     "scripts": {
@@ -29,11 +29,11 @@
     },
     "homepage": "https://github.com/huang2002/3h-server#readme",
     "dependencies": {
-        "3h-cli": "^1.4.3",
+        "3h-cli": "^1.5.0",
         "3h-log": "^3.0.1",
-        "3h-router": "^2.0.3"
+        "3h-router": "^2.0.4"
     },
     "devDependencies": {
-        "@types/node": "^10.3.5"
+        "@types/node": "^10.5.2"
     }
 }
